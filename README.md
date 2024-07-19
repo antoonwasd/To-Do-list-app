@@ -1,1 +1,1 @@
-This is a To-Do list app I have made. This is my first time coding in JavaScript so I had to some inspiration from the this youtube video by GreatStack: https://youtu.be/G0jO8kUrg-I?si=moabTxtIWXgtju3G.
+This is a To-Do list app I have made. This is my first time coding in JavaScript so I had to take some inspiration from the this youtube video by GreatStack: https://youtu.be/G0jO8kUrg-I?si=moabTxtIWXgtju3G.
