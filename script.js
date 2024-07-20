@@ -4,8 +4,14 @@ const inputBox = document.querySelector('.input-box input');
 const inputBoxDiv = document.querySelector('.input-box');
 
 inputBoxDiv.classList.add('hide');
+
 addTaskButton.addEventListener('click', function() {
-    if (inputBox.value.trim() !== '') {
+    inputBoxDiv.classList.toggle('show-input');
+    saveData();
+});
+
+inputBox.addEventListener("keydown", function(e){
+    if (e.key === "Enter") {
         const newItem = document.createElement('li');
         newItem.textContent = inputBox.value;
         listContainer.appendChild(newItem);
@@ -13,10 +19,11 @@ addTaskButton.addEventListener('click', function() {
         span.innerHTML = 'X';
         newItem.appendChild(span);
         inputBox.value = '';
+        saveData();
     }
-    inputBoxDiv.classList.toggle('show-input');
-    saveData();
 });
+
+
 
 listContainer.addEventListener("click", function(e){
     if(e.target.tagName === "LI"){

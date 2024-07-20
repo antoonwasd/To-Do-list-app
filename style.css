@@ -103,13 +103,13 @@ span {
   justify-content: center;
   align-items: center;
   position: absolute;
+  right: 10rem;
   font-size: 1rem;
   padding: 1rem;
   border-radius: 10%;
   background-color: lightgray;
   width: 2rem;
   height: 2rem;
-  margin-left: 40rem;
 }
 span:hover {
   background-color: rgb(185, 185, 185);
